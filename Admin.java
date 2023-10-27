@@ -9,10 +9,6 @@ public class Admin {
     private static double revenue=0; //default 0, then increases
     private static int numbervis=0; //default 0, then increases
 
-
-//    ArrayList<Visitor> visitors= new ArrayList<>(); //list of all visitors
-//ArrayList<Attraction> attracts= new ArrayList<>(); //list of all attractions
-
     public String getUsername() {return username;}
     public String getPassword() {return password;}
 
