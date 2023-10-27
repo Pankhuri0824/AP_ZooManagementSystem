@@ -6,7 +6,3 @@ public class Amphibian extends Animal{
         super(type, name,sound, info);
     }
 }
-
-
-//reptile a=new reptile
-//animal a=new reptile - Hashmap animal
