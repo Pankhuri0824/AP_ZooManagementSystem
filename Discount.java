@@ -5,30 +5,17 @@ public class Discount {
     private String category;
     private int value;
 
-    public String getCode() {
-        return code;
-    }
+    //getter setters-----------------------------------------------------------------------------------------------
+    public String getCode() {return code;}
+    public void setCode(String code) {this.code = code;}
 
-    public void setCode(String code) {
-        this.code = code;
-    }
+    public int getValue() {return value;}
+    public void setValue(int value) {this.value = value;}
 
-    public int getValue() {
-        return value;
-    }
+    public String getCategory() {return category;}
+    public void setCategory(String category) { this.category = category;}
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
+    //constructor-----------------------------------------------------------------------------------------------
     public Discount(String code, int value, String category) {
         this.code = code;
         this.value = value;
@@ -38,7 +25,7 @@ public class Discount {
     @Override
     public String toString() {
         return "Discount code:" + code +
-                "\n Category:" + category +
+                "\nCategory:" + category +
                 "\nValue:" + value ;
     }
 }
