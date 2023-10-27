@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Visitor {
     private String name;
     private int age;
@@ -8,6 +11,15 @@ public class Visitor {
     private String email;
     private String password;
     private String membership=null; //defeault as null, otherwise basic or premium
+    private ArrayList<Ticket> visiTickets= new ArrayList<>(); //list of all tickets with id
+
+    public ArrayList<Ticket> getVisiTickets() {
+        return visiTickets;
+    }
+
+    public void setVisiTickets(ArrayList<Ticket> visiTickets) {
+        this.visiTickets = visiTickets;
+    }
 
     //constructor
     public Visitor(String name, int age, int number, double balance, String email, String password) {
