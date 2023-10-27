@@ -1,6 +1,6 @@
 package org.example;
 
-public abstract class Animal {
+public abstract class Animal implements Living{
     private String type;
     private String name;
     private String sound;
@@ -60,6 +60,7 @@ public abstract class Animal {
     @Override
     public String toString() {
         return "Name:" + name +
+                "\nType:" + type+
                 "\nDescription:" + info ;
     }
 }
