@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Attraction {
@@ -11,6 +12,9 @@ public class Attraction {
     private boolean event=false; // default 0 is no event , 1 is event set
     private int visicount=0; //default 0, can increase
 
+//    private ArrayList<Ticket> attAnimals= new ArrayList<>(); //list of all tickets
+//    public ArrayList<Ticket> getattAnimals() {return attAnimals;}
+//    public void setattAnimals(ArrayList<Ticket> visiTickets) {this.attAnimals = visiTickets;}
 
 
     //Constructor---------------------------------------------------------------------------------------------------------
@@ -39,7 +43,6 @@ public class Attraction {
     public void setEvent(boolean event) {this.event = event;}
 
     public int getVisicount() {return visicount;}
-
     public void setVisicount(int visicount) {this.visicount = visicount;}
 
     //toString------------------------------------------------------------------------------------------------------------
